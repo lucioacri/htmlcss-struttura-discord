@@ -82,7 +82,6 @@ main {
 }
 
 .main-div {
-  flex-direction: column;
   display: flex;
 }
 
@@ -105,12 +104,18 @@ main {
 .main-grey {
   background-color: lightgrey;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
   display: flex;
 }
 
 .main-grey > .container > .rosa {
   order: -1;
+}
+
+.green {
+  height: 600px;
+  background-color: green;
+  flex-basis: 100%;
+  border: 4px dashed black;
 }
 
 /* footer */
