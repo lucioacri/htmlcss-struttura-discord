@@ -4,4 +4,44 @@
   box-sizing: border-box;
 }
 
+/* utility */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
 /* # header */
+
+.header {
+  display: flex;
+  background-color: #a37c1e;
+  min-height: 30px;
+  align-items: center;
+  border: 2px dashed black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.pic {
+  max-width: 800px;
+  background-color: blue;
+}
+
+/* main */
+main {
+  flex-grow: 1;
+}
+/* footer */
