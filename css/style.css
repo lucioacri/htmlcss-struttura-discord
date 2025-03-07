@@ -99,6 +99,7 @@ main {
   background-color: #ffc0ca;
   flex-basis: 30%;
   border: 4px dashed black;
+  display: flex;
 }
 
 .main-grey {
@@ -121,5 +122,35 @@ main {
 /* footer */
 
 footer {
-  background-color: red;
+  background-color: #23272a;
+}
+
+.container > .main-black {
+  background-color: aqua;
+}
+
+.foot {
+  border: 4px dashed black;
+  padding: 0;
+}
+
+.main-black {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aquamarine {
+  background-color: #20b3aa;
+  flex-basis: 70%;
+  display: flex;
+}
+
+.box {
+  border: 2px dashed white;
+  flex-shrink: 1;
+  flex-basis: 25%;
+}
+
+.foot.container > .rosa {
+  border: 0;
 }
