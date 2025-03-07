@@ -16,9 +16,11 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  display: flex;
   min-height: 400px;
   min-width: 980px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* # header */
@@ -73,23 +75,42 @@ header {
 
 /* main */
 main {
-  flex-grow: 1;
   background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-div {
+  flex-direction: column;
+  display: flex;
+}
+
+.grey {
+  background-color: lightgrey;
 }
 
 .blu {
   background-color: #1e90ff;
-  flex: 2 0 780px;
+  flex-basis: 70%;
   border: 4px dashed black;
 }
 
 .rosa {
   background-color: #ffc0ca;
-  flex: 1 0 200px;
+  flex-basis: 30%;
   border: 4px dashed black;
+}
+
+.main-grey {
+  background-color: lightgrey;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.main-grey > .container > .rosa {
+  order: -1;
 }
 
 /* footer */
