@@ -21,6 +21,7 @@
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 /* # header */
@@ -35,22 +36,26 @@ header {
   background-color: #a57f1e;
   height: 30px;
   align-items: center;
-  border: 2px dashed black;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  display: flex;
+}
+
+.top {
   max-width: 980px;
+  border: 2px dashed black;
 }
 
 .links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 10px;
   height: 30px;
   align-items: center;
+  flex-basis: 50%;
+  border: 2px dashed black;
 }
 
 .pic {
@@ -127,6 +132,7 @@ footer {
 
 .container > .main-black {
   background-color: aqua;
+  flex-wrap: wrap;
 }
 
 .foot {
@@ -153,4 +159,18 @@ footer {
 
 .foot.container > .rosa {
   border: 0;
+}
+
+.bottom-links {
+  flex-basis: 100%;
+}
+
+.bottom-links > .top {
+  border: none;
+  margin-bottom: 0px;
+}
+
+p.bottom {
+  border: 2px dashed black;
+  background-color: pink;
 }
